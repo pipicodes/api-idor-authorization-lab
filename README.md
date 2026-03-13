@@ -36,3 +36,11 @@ python3 -m uvicorn vulnerable_api:app --reload
 ```bash
 python3 -m uvicorn secure_api:app --reload --port 8001
 ```
+
+## Security Test Results
+
+### Vulnerable API – Unauthorized access via IDOR
+![IDOR Attack](screenshots/idor-unauthorized-access.png)
+
+### Secure API – Attack blocked
+![Secure Validation](screenshots/idor-secure-api-denied.png)
